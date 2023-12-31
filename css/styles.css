@@ -60,8 +60,8 @@ img {
     flex-direction: row;
 
     width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
     margin-left: auto;
     margin-right: auto; 
 
@@ -80,7 +80,8 @@ img {
 @media screen and (min-width: 1158px) {
     .container {  
         width: 1158px;
-        
+        padding-left: 16px;
+        padding-right: 16px;
   }
 }
 
@@ -725,6 +726,27 @@ transition-property: color;
 
 .footer .container {
     padding-left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+.footer .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 1156px) {
+.footer .container {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+   .footer-wrap {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
 }
 
 .footer-social-text {
