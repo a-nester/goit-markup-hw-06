@@ -62,8 +62,8 @@ img {
     padding-right: 0;
     margin-left: auto;
     margin-right: auto; 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -316,7 +316,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-
 @media only screen and (min-width: 1158px) {
     .hero {
         min-height: 660px;
@@ -333,13 +332,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-
 .hero-cont {
     display: flex;
     flex-direction: column;
     align-items: center;
  }
-
 
 .hero-text {
     color: #FFF;
@@ -425,11 +422,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 1158px) {
     .header-list {
-        color: #2E2F42;
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: 0.02em;
     }
 }
 
@@ -479,7 +474,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-bottom: 8px;
     border-radius: 4px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    background: var(--CLOUD, #F4F4FD);
+    background: #F4F4FD;
     display: none;
 }
 
@@ -493,17 +488,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 264px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.99px) {
     .benefits-list-item {
         width: 360px;
     }
 }
 
-@media only screen and (min-width: 1158px) {
+/* @media only screen and (min-width: 1158px) {
     .benefits-list-item {
         width: 264px;
     }
-}
+} */
 
 /* Section Our Team */
 
@@ -584,6 +579,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
+.team-item .header-list {
+    color: #2E2F42;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
 .card-text {
     display: block;
     text-align: center;
@@ -642,17 +646,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     row-gap: 48px;   
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157.99px) {
     .portfolio-list {
         row-gap: 72px;   
     }
 }
 
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
     .portfolio-list {
         row-gap: 48px;   
     }
-}
+} */
 
 .portfolio-list-item {
     display: block;
@@ -710,6 +714,22 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     border-top: none;
 }
 
+.portfolio-list-item .header-list {
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.portfolio-list-item .benefits-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
 /* Footer */
 
 .footer {
@@ -719,7 +739,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media only screen and (min-width: 1158px) {
     .footer {
-        
         padding: 100px 0;
     }
 }
@@ -755,7 +774,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media only screen and (min-width: 768px) {
     .footer-logo {
-        
         margin-bottom: 0;
     }
 }
@@ -780,10 +798,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 @media only screen and (min-width: 1158px) {
     .footer .logo {
         display: inline-block;
-        margin-bottom: 16px;
+        /* margin-bottom: 16px;
         padding: 0;
         margin-right: 0;
-        margin-left: 0;
+        margin-left: 0; */
     }
 }
 
@@ -817,8 +835,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media only screen and (min-width: 768px) {
     .footer-social {
-        margin-bottom: 0;
         margin-right: 0;
+        margin-bottom: 0;
     }
 }
 
@@ -832,9 +850,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media only screen and (min-width: 1158px) {
     .footer-wrap {
-     display: flex;
      gap: 0;
-     justify-content: center;
    }
  }
 
@@ -1053,9 +1069,9 @@ background-color: var(--OCEAN, #404BBF);
     letter-spacing: 0.02em;
 }
 
-.form-input {
+/* .form-input {
     
-}
+} */
 
 .form-box {
     margin-bottom: 8px;
