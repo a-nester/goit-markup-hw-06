@@ -278,11 +278,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     gap: 40px;
 }
 
+/* Hero section */
 .hero {
     background-color: #2E2F42;
     padding: 72px 0;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-image.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url(../images/hero/hero-bg-image.jpg);
     max-width: 1440px;
     min-width: 320px;
     background-repeat: no-repeat;
