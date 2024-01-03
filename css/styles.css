@@ -283,8 +283,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: #2E2F42;
     padding: 72px 0;
     margin: 0 auto;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/Hero/hr-bg-mob@1x.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Hero/hr-bg-mob@1x.jpg);
     min-width: 320px;
     max-width: 1440px;
     min-height: 432px;
