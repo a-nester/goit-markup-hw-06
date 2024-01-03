@@ -57,7 +57,6 @@ img {
 .container {
     display: flex;
     flex-direction: row;
-
     width: 320px;
     padding-left: 0;
     padding-right: 0;
@@ -98,6 +97,7 @@ img {
     flex-direction: row;
     align-items: center;
 } 
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-size: 18px;
@@ -284,25 +284,55 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 0;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/hero/hero-bg-image.jpg);
-    max-width: 1440px;
+    url(../images/hero/hr-bg-mob@1x.jpg);
     min-width: 320px;
+    max-width: 1440px;
+    min-height: 432px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-@media only screen and (min-width: 768px) {
-.hero {
-    padding: 112px 0 36px;
+@media (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hr-bg-mob@2x.jpg);
     }
 }
 
-@media only screen and (min-width: 1158px) {
-.hero {
-        padding: 188px 0;
+@media only screen and (min-width: 768px) {
+    .hero {
+        min-height: 436px;
+        padding: 112px 0 36px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hr-bg-tab@1x.jpg);
     }
 }
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hr-bg-tab@2x.jpg);
+    }
+}
+
+
+@media only screen and (min-width: 1158px) {
+    .hero {
+        min-height: 660px;
+        padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hr-bg-desk@1x.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+        url(../images/hero/hr-bg-desk@2x.jpg);
+    }
+}
+
 
 .hero-cont {
     display: flex;
