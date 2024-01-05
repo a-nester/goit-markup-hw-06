@@ -57,8 +57,7 @@ img {
     display: flex;
     flex-direction: row;
     width: 320px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 16px 16px;
     margin-left: auto;
     margin-right: auto; 
     /* outline: 2px solid red;
@@ -68,14 +67,14 @@ img {
 @media screen and (min-width: 768px) {
     .container {  
         width: 768px;
-        padding-left: 0;
-        padding-right: 0;   
+        padding: 0 16px;  
   }
 }
 
 @media screen and (min-width: 1158px) {
     .container {  
         width: 1158px;
+        padding: 0 15px;
   }
 }
 
@@ -88,8 +87,21 @@ img {
 
 .header .container {
     justify-content: space-between;
-    padding: 16px 16px;
+    align-items: center;
+    
 }
+
+/* @media only screen and (max-width: 767px) {
+    .header .container {
+    padding: 16px 16px;
+  }
+} */
+
+/* @media only screen and (min-width: 1158px) {
+    .header .container {
+    padding: 0;
+  }
+} */
 
 .container-nav {
     display: flex;
@@ -181,7 +193,7 @@ img {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    padding: 24px 0;
+    /* padding: 24px 0; */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157.99px) {
@@ -284,10 +296,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .mob-menu .contacts-item {
     color: #434455;
-/* Header 3 */
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.2; /* 120% */
+    line-height: 1.2;
     letter-spacing: 0.02em;
 }
 
@@ -310,7 +321,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     url(../images/Hero/hrbgmob1x.jpg);
     min-width: 320px;
     max-width: 1440px;
-    min-height: 432px;
+    /* min-height: 432px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -370,6 +381,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     max-width: 496px;
     margin-bottom: 72px;  
+    padding: 0 32px;
+    text-transform: capitalize;
 }
 
 @media only screen and (min-width: 768px) {
@@ -461,8 +474,8 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 @media screen and (min-width: 768px) {
    .benefits-list {
-    gap: 72px 24px;
-    padding-left: 16px; 
+    /* gap: 72px 24px; */
+    /* padding-left: 16px;  */
   }
 }
 
@@ -511,7 +524,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     width: 264px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
     .benefits-list-item {
         width: 360px;
     }
@@ -597,7 +610,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     .team-item {
         width: 264px;
         gap: 24px;
-        /* width: calc((100% - 24px * 3) / 4); */
+        width: calc((100% - 24px * 3) / 4);
     }
     
 }
@@ -703,16 +716,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-@media only screen and (max-width: 767.99px) {
-    .portfolio-list-item {
-         box-shadow: 
-             0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
-             0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
-             0px 1px 6px 0px rgba(46, 47, 66, 0.08);  
-   }
- }
-
-@media only screen and (min-width: 768px) and (max-width: 1157.99px) {
+@media only screen and (max-width: 1157.99px) {
    .portfolio-list-item {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -799,9 +803,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    gap: 72px 24px;
-    padding: 0 108px;
+    
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+   .footer .container {
+        gap: 72px 24px;
+        padding: 0 108px;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -834,11 +844,17 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .footer .logo {
     display: flex;
-    justify-content: center;
+    
     margin-bottom: 16px;
     padding: 0;
     margin-right: 0;
     margin-left: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer .logo {
+        justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -935,6 +951,13 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .footer-subscribe {
     display: flex;
     flex-direction: column;
+    
+}
+
+@media only screen and (min-width: 1158px) {
+   .footer-subscribe {
+    margin-left: auto;
+  }
 }
 
 .subtext {
